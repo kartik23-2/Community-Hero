@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
+import { API } from '../config';
 
 const AuthContext = createContext(null);
 
@@ -16,7 +17,7 @@ export const AuthProvider = ({ children }) => {
       }
 
       try {
-        const res = await fetch('/api/auth/me', {
+        const res = await fetch(`${API}/api/auth/me`, {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -42,13 +43,19 @@ export const AuthProvider = ({ children }) => {
   }, [token]);
 
   const login = async (email, password) => {
-    const res = await fetch('/api/auth/login', {
+    const res = await fetch(`${API}/api/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
     });
 
-    const data = await res.json();
+    let data;
+    try {
+      data = await res.json();
+    } catch (e) {
+      throw new Error(`Invalid response format. Please verify that your API URL is correct (configured as: "${API || 'relative proxy'}").`);
+    }
+
     if (!res.ok) {
       throw new Error(data.error || 'Authentication failed');
     }
@@ -60,13 +67,19 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (name, email, password) => {
-    const res = await fetch('/api/auth/register', {
+    const res = await fetch(`${API}/api/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password })
     });
 
-    const data = await res.json();
+    let data;
+    try {
+      data = await res.json();
+    } catch (e) {
+      throw new Error(`Invalid response format. Please verify that your API URL is correct (configured as: "${API || 'relative proxy'}").`);
+    }
+
     if (!res.ok) {
       throw new Error(data.error || 'Registration failed');
     }
@@ -90,7 +103,7 @@ export const AuthProvider = ({ children }) => {
       'Authorization': `Bearer ${token}`
     };
 
-    const response = await fetch(url, { ...options, headers });
+    const response = await fetch(`${API}${url}`, { ...options, headers });
     if (response.status === 401 || response.status === 403) {
       // Automatic logout on token expiration
       logout();

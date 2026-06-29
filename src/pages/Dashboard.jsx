@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Shield, CheckCircle, Users, Activity, Search, AlertCircle, AlertTriangle, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { API } from '../config';
 import MapDashboard from '../components/MapDashboard';
 import ImpactChart from '../components/ImpactChart';
 import SafetyAlerts from '../components/SafetyAlerts';
@@ -17,8 +18,8 @@ export default function Dashboard() {
     const fetchDashboardData = async () => {
       try {
         const [resIssues, resPredictions] = await Promise.all([
-          fetch('/api/issues'),
-          fetch('/api/predictions')
+          fetch(`${API}/api/issues`),
+          fetch(`${API}/api/predictions`)
         ]);
         
         if (resIssues.ok) {

@@ -4,6 +4,7 @@ import { ArrowLeft, MapPin, CheckCircle, ThumbsUp, Landmark, Calendar, MessageSq
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import { useAuth } from '../context/AuthContext';
+import { API } from '../config';
 
 export default function IssueDetail() {
   const { id } = useParams();
@@ -18,7 +19,7 @@ export default function IssueDetail() {
   // Fetch issue details on mount
   const fetchIssueDetails = async () => {
     try {
-      const res = await fetch('/api/issues');
+      const res = await fetch(`${API}/api/issues`);
       if (res.ok) {
         const data = await res.json();
         const found = data.find(i => i.id === id);
@@ -135,7 +136,7 @@ export default function IssueDetail() {
   const refetchUser = async () => {
     if (!token) return;
     try {
-      const res = await fetch('/api/auth/me', {
+      const res = await fetch(`${API}/api/auth/me`, {
         headers: { 'Authorization': `Bearer ${token}` }
       });
       if (res.ok) {
@@ -161,7 +162,7 @@ export default function IssueDetail() {
     }
 
     try {
-      const res = await fetch(`/api/issues/${id}/verify`, {
+      const res = await fetch(`${API}/api/issues/${id}/verify`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -185,7 +186,7 @@ export default function IssueDetail() {
     setIsEscalating(true);
 
     try {
-      const res = await fetch(`/api/issues/${id}/escalate`, {
+      const res = await fetch(`${API}/api/issues/${id}/escalate`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -208,7 +209,7 @@ export default function IssueDetail() {
   // Start Fix simulation
   const handleStartFix = async () => {
     try {
-      const res = await fetch(`/api/issues/${id}/start-fix`, {
+      const res = await fetch(`${API}/api/issues/${id}/start-fix`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -224,7 +225,7 @@ export default function IssueDetail() {
   // Resolve issue simulation
   const handleResolve = async () => {
     try {
-      const res = await fetch(`/api/issues/${id}/resolve`, {
+      const res = await fetch(`${API}/api/issues/${id}/resolve`, {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` }
       });
@@ -251,7 +252,7 @@ export default function IssueDetail() {
     }
 
     try {
-      const res = await fetch(`/api/issues/${id}/comments`, {
+      const res = await fetch(`${API}/api/issues/${id}/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

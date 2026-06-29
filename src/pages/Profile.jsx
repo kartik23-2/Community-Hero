@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Award, ShieldAlert, Droplets, MessageSquareCode, Wrench, Lock, Eye, Flame, History, ClipboardList, LogOut } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import { API } from '../config';
 
 const badgeIcons = {
   ShieldAlert: ShieldAlert,
@@ -23,7 +24,7 @@ export default function Profile() {
     const fetchData = async () => {
       try {
         // Fetch issues
-        const resIssues = await fetch('/api/issues');
+        const resIssues = await fetch(`${API}/api/issues`);
         let currentIssues = [];
         if (resIssues.ok) {
           currentIssues = await resIssues.json();
@@ -31,7 +32,7 @@ export default function Profile() {
         }
 
         // Fetch latest user points
-        const resUser = await fetch('/api/auth/me', {
+        const resUser = await fetch(`${API}/api/auth/me`, {
           headers: { 'Authorization': `Bearer ${token}` }
         });
         if (resUser.ok) {

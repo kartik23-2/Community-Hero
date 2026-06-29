@@ -12,8 +12,8 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 5001;
-const JWT_SECRET = process.env.JWT_SECRET;
-const API = import.meta.env.VITE_API_URL;
+const JWT_SECRET = process.env.JWT_SECRET || 'community-hero-secret-key-12345';
+const API = process.env.VITE_API_URL || '';
 
 // Middleware
 app.use(cors({

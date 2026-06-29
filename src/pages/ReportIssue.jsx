@@ -7,6 +7,7 @@ import {
 } from 'lucide-react';
 import MapSelector from '../components/MapSelector';
 import { useAuth } from '../context/AuthContext';
+import { API } from '../config';
 
 /* ─── Haversine Distance ─────────────────────────────── */
 const getDistance = (lat1, lon1, lat2, lon2) => {
@@ -170,7 +171,7 @@ export default function ReportIssue() {
 
   // Load existing issues for dup check
   useEffect(() => {
-    fetch('/api/issues')
+    fetch(`${API}/api/issues`)
       .then(r => r.ok && r.json())
       .then(d => d && setExistingIssues(d))
       .catch(() => {});
@@ -266,7 +267,7 @@ export default function ReportIssue() {
   const refetchUser = async () => {
     if (!token) return;
     try {
-      const res = await fetch('/api/auth/me', { headers: { Authorization: `Bearer ${token}` } });
+      const res = await fetch(`${API}/api/auth/me`, { headers: { Authorization: `Bearer ${token}` } });
       if (res.ok) setUser(await res.json());
     } catch {}
   };
@@ -275,7 +276,7 @@ export default function ReportIssue() {
     if (!duplicateIssue || !token) return;
     setSubmitting(true);
     try {
-      const res = await fetch(`/api/issues/${duplicateIssue.id}/verify`, {
+      const res = await fetch(`${API}/api/issues/${duplicateIssue.id}/verify`, {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -298,7 +299,7 @@ export default function ReportIssue() {
     fd.append('address', address); fd.append('lat', latLng.lat); fd.append('lng', latLng.lng);
     if (mediaFile) fd.append('media', mediaFile);
     try {
-      const res = await fetch('/api/issues', { method: 'POST', headers: { Authorization: `Bearer ${token}` }, body: fd });
+      const res = await fetch(`${API}/api/issues`, { method: 'POST', headers: { Authorization: `Bearer ${token}` }, body: fd });
       if (res.ok) { await refetchUser(); navigate('/'); }
       else { const e = await res.json(); alert(e.error || 'Failed to submit.'); }
     } catch { alert('Error uploading to server.'); }
