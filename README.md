@@ -53,13 +53,8 @@ Create a `.env` (or `.env.local`) for any required runtime configuration (e.g., 
 
 ![Dashboard mockup](public/screenshots/dashboard_mockup.png)
 
-![Map mockup](public/screenshots/map_mockup.png)
 
-## Demo Video
 
-<video controls src="public/videos/demo_demo.mp4" width="600">
-Your browser does not support the video tag.
-</video>
 
 
 
