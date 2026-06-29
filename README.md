@@ -45,20 +45,22 @@ Create a `.env` (or `.env.local`) for any required runtime configuration (e.g., 
 
 ## Screenshots
 
-![Homepage mockup](file:///C:/Users/karti/.gemini/antigravity-ide/brain/4c108bf1-be4a-45aa-b8e1-2c239542ced2/homepage_mockup_1782755895127.png)
+## Screenshots
 
+![Homepage mockup](public/screenshots/homepage_mockup.png)
 
 ## Additional Screenshots
 
-![Dashboard mockup](file:///C:/Users/karti/.gemini/antigravity-ide/brain/4c108bf1-be4a-45aa-b8e1-2c239542ced2/dashboard_mockup_1782755961147.png)
+![Dashboard mockup](public/screenshots/dashboard_mockup.png)
 
-![Map mockup](file:///C:/Users/karti/.gemini/antigravity-ide/brain/4c108bf1-be4a-45aa-b8e1-2c239542ced2/map_mockup_1782755975941.png)
+![Map mockup](public/screenshots/map_mockup.png)
 
 ## Demo Video
 
-<video controls src="file:///C:/Users/karti/OneDrive/Desktop/demo/Problem Solver/demo_demo.mp4" width="600">
+<video controls src="public/videos/demo_demo.mp4" width="600">
 Your browser does not support the video tag.
 </video>
+
 
 
 ## License
