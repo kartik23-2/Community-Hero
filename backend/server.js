@@ -11,12 +11,18 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 5001;
-const JWT_SECRET = 'community_hero_super_secret_jwt_key_2026';
+const PORT = process.env.PORT || 5001;
+const JWT_SECRET = process.env.JWT_SECRET;
+const API = import.meta.env.VITE_API_URL;
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://community-hero-1-w0bq.onrender.com"
+  ],
+  credentials: true
+}));app.use(express.json());
 
 // Ensure directories exist
 const uploadsDir = path.join(__dirname, 'uploads');
@@ -286,7 +292,7 @@ app.post('/api/issues', authenticateToken, upload.single('media'), (req, res) =>
   
   // Set real static uploads file url if file is sent
   const mediaUrl = req.file 
-    ? `http://localhost:5000/uploads/${req.file.filename}`
+    ? `${req.protocol}://${req.get("host")}/uploads/${req.file.filename}`
     : 'https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=800&q=80';
 
   const newIssue = {
