@@ -1,0 +1,372 @@
+{
+  "users": [
+    {
+      "id": "u-1782629736271",
+      "name": "Jane Citizen",
+      "email": "jane@citizen.org",
+      "passwordHash": "$2a$10$3hpzJtTDivBzLGfDcI8usuNRKE8qbjmCBKJy2SyuE8LyjZqqDIpky",
+      "avatar": "https://images.unsplash.com/photo-1535713879702?auto=format&fit=crop&w=150&h=150&q=80",
+      "level": 1,
+      "points": 60,
+      "reportedCount": 1,
+      "verifiedCount": 1,
+      "badges": [
+        {
+          "id": "b1",
+          "name": "First Responder",
+          "description": "Reported your first community issue",
+          "icon": "ShieldAlert",
+          "color": "#06b6d4"
+        }
+      ],
+      "history": [
+        {
+          "id": "h-1782630223024",
+          "type": "verify",
+          "text": "Verified issue: 'Broken water mains near gate 3'",
+          "date": "2026-06-28T07:03:43.024Z",
+          "points": 10
+        },
+        {
+          "id": "h-1782629830556",
+          "type": "report",
+          "text": "Reported 'Broken water mains near gate 3'",
+          "date": "2026-06-28T06:57:10.557Z",
+          "points": 50
+        }
+      ]
+    },
+    {
+      "id": "u-1782629917599",
+      "name": "Ravi Sharma",
+      "email": "ravi@citizen.org",
+      "passwordHash": "$2a$10$hXDcTmZjVlV3qY2FmvRiGutAbjl7WfyIS0mLc2kbw8BBF.moG3bH2",
+      "avatar": "https://images.unsplash.com/photo-1535713877697?auto=format&fit=crop&w=150&h=150&q=80",
+      "level": 1,
+      "points": 10,
+      "reportedCount": 0,
+      "verifiedCount": 1,
+      "badges": [],
+      "history": [
+        {
+          "id": "h-1782629970601",
+          "type": "verify",
+          "text": "Verified issue: 'Broken water mains near gate 3'",
+          "date": "2026-06-28T06:59:30.601Z",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "u-1782630038362",
+      "name": "Amit Singh",
+      "email": "amit@citizen.org",
+      "passwordHash": "$2a$10$sAathn92Q0JiPl4JbsmuD.Lthn0DcUdr/OgYm737fs16DE/HBP1/G",
+      "avatar": "https://images.unsplash.com/photo-1535713881540?auto=format&fit=crop&w=150&h=150&q=80",
+      "level": 1,
+      "points": 30,
+      "reportedCount": 0,
+      "verifiedCount": 1,
+      "badges": [],
+      "history": [
+        {
+          "id": "h-1782630274600",
+          "type": "verify",
+          "text": "Escalated 'Broken water mains near gate 3' to Municipal Solid Waste Management (MSWM)",
+          "date": "2026-06-28T07:04:34.587Z",
+          "points": 20
+        },
+        {
+          "id": "h-1782630174287",
+          "type": "verify",
+          "text": "Verified issue: 'Broken water mains near gate 3'",
+          "date": "2026-06-28T07:02:54.287Z",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "id": "u-1782630667041",
+      "name": "Kartik Baliyan",
+      "email": "kartikbaliyan00004@gmail.com",
+      "passwordHash": "$2a$10$GFx7xYW9tNjwPhjSov/dE.1khoEKYugQ.yBNzLHdyd57bIOo.sCCS",
+      "avatar": "https://images.unsplash.com/photo-1535713882521?auto=format&fit=crop&w=150&h=150&q=80",
+      "level": 1,
+      "points": 200,
+      "reportedCount": 2,
+      "verifiedCount": 0,
+      "badges": [
+        {
+          "id": "b1",
+          "name": "First Responder",
+          "description": "Reported your first community issue",
+          "icon": "ShieldAlert",
+          "color": "#06b6d4"
+        }
+      ],
+      "history": [
+        {
+          "id": "h-1782639799443",
+          "type": "report",
+          "text": "Reported 'Severe Pothole Causing Road Hazard'",
+          "date": "2026-06-28T09:43:19.443Z",
+          "points": 50
+        },
+        {
+          "id": "h-1782638939355",
+          "type": "report",
+          "text": "Reported 'Severe Pothole Causing Road Hazard'",
+          "date": "2026-06-28T09:28:59.355Z",
+          "points": 50
+        },
+        {
+          "id": "h-1782631221486",
+          "type": "resolve",
+          "text": "Helped mark 'Sewage overflow and flooding on main road' as Resolved",
+          "date": "2026-06-28T07:20:21.486Z",
+          "points": 100
+        }
+      ]
+    },
+    {
+      "id": "u-1782632288310",
+      "name": "Arun Dev",
+      "email": "arun@citizen.org",
+      "passwordHash": "$2a$10$aQ/Q84V./YYzj239xnmFpeeqKij4EYvSPC9lAlR12iqTbJd4phpGq",
+      "avatar": "https://images.unsplash.com/photo-1535713875346?auto=format&fit=crop&w=150&h=150&q=80",
+      "level": 1,
+      "points": 10,
+      "reportedCount": 0,
+      "verifiedCount": 1,
+      "badges": [],
+      "history": [
+        {
+          "id": "h-1782632681986",
+          "type": "verify",
+          "text": "Verified issue: 'Massive pothole causing traffic bottlenecks'",
+          "date": "2026-06-28T07:44:41.986Z",
+          "points": 10
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "issue-1782639799443",
+      "title": "Severe Pothole Causing Road Hazard",
+      "description": "A large, deep pothole has been identified on the road surface that poses a serious risk to vehicles and cyclists. The road pavement has significantly deteriorated, exposing loose aggregate and creating a dangerous crater that may cause tire blowouts, vehicle damage, or accidents. Immediate repair and resurfacing is required by the municipal roads department.",
+      "category": "Infrastructure",
+      "severity": "High",
+      "status": "reported",
+      "location": {
+        "lat": 28.713527182076245,
+        "lng": 77.45889271109178,
+        "address": "Mandi House Outer Circle, Sector 1, New Delhi — 28.7135°N, 77.4589°E"
+      },
+      "reportedBy": "Kartik Baliyan",
+      "reportedAt": "2026-06-28T09:43:19.443Z",
+      "upvotes": 0,
+      "verifications": 0,
+      "verifiedBy": [],
+      "comments": [],
+      "mediaUrl": "http://localhost:5000/uploads/1782639799435-732035986.webp",
+      "mediaType": "image",
+      "escalationInfo": null
+    },
+    {
+      "id": "issue-1782638939355",
+      "title": "Severe Pothole Causing Road Hazard",
+      "description": "A large, deep pothole has been identified on the road surface that poses a serious risk to vehicles and cyclists. The road pavement has significantly deteriorated, exposing loose aggregate and creating a dangerous crater that may cause tire blowouts, vehicle damage, or accidents. Immediate repair and resurfacing is required by the municipal roads department.",
+      "category": "Infrastructure",
+      "severity": "High",
+      "status": "reported",
+      "location": {
+        "lat": 28.61715617265781,
+        "lng": 77.24814561510189,
+        "address": "Mandi House Outer Circle, Safdarjung Enclave, New Delhi — 28.6172°N, 77.2481°E"
+      },
+      "reportedBy": "Kartik Baliyan",
+      "reportedAt": "2026-06-28T09:28:59.355Z",
+      "upvotes": 0,
+      "verifications": 0,
+      "verifiedBy": [],
+      "comments": [],
+      "mediaUrl": "http://localhost:5000/uploads/1782638939345-628418720.webp",
+      "mediaType": "image",
+      "escalationInfo": null
+    },
+    {
+      "id": "issue-1782629830556",
+      "title": "Broken water mains near gate 3",
+      "description": "Water is overflowing from the main street pipe near RK Puram Gate 3. Pedestrians cannot cross.",
+      "category": "Sanitation",
+      "severity": "Low",
+      "status": "escalated",
+      "location": {
+        "lat": 28.590068999716188,
+        "lng": 77.21002578735353,
+        "address": "Safdarjung Lane 2, Sector 3, New Delhi - Lat: 28.5901, Lng: 77.2100"
+      },
+      "reportedBy": "Jane Citizen",
+      "reportedAt": "2026-06-28T06:57:10.556Z",
+      "upvotes": 3,
+      "verifications": 3,
+      "verifiedBy": [
+        "ravi@citizen.org",
+        "amit@citizen.org",
+        "jane@citizen.org"
+      ],
+      "comments": [
+        {
+          "id": "c-sys-1782630223024",
+          "user": "Community Hero Bot",
+          "text": "Community Verified: This issue has received 3 independent user verifications. It is now qualified for official authority escalation.",
+          "timestamp": "2026-06-28T07:03:43.024Z",
+          "isSystem": true
+        },
+        {
+          "id": "c-sys-1782630274600",
+          "user": "Municipal Solid Waste Management (MSWM) Support",
+          "text": "Official Ticket Registered: Assigned reference ID #CH-989168. Simulated municipal team scheduled for site dispatch. Action log generated at reports/report_CH-989168.txt.",
+          "timestamp": "2026-06-28T07:04:34.587Z",
+          "isSystem": true
+        }
+      ],
+      "mediaUrl": "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=800&q=80",
+      "mediaType": "default",
+      "escalationInfo": {
+        "agency": "Municipal Solid Waste Management (MSWM)",
+        "escalatedAt": "2026-06-28T07:04:34.587Z",
+        "ticketId": "CH-989168"
+      }
+    },
+    {
+      "id": "issue-1",
+      "title": "Massive pothole causing traffic bottlenecks",
+      "description": "A huge pothole has opened up right in the middle of the Inner Ring Road. Cars and motorbikes are forced to swerve dangerously to avoid it, causing major traffic jams during peak hours.",
+      "category": "Infrastructure",
+      "severity": "High",
+      "status": "escalated",
+      "location": {
+        "lat": 28.573,
+        "lng": 77.207,
+        "address": "Inner Ring Road, near Safdarjung Flyover, New Delhi"
+      },
+      "reportedBy": "Aarav Mehta",
+      "reportedAt": "2026-06-25T08:30:00Z",
+      "upvotes": 19,
+      "verifications": 15,
+      "verifiedBy": [
+        "user-2",
+        "user-3",
+        "user-4",
+        "arun@citizen.org"
+      ],
+      "comments": [
+        {
+          "id": "c1",
+          "user": "Neha Sharma",
+          "text": "I almost lost balance on my scooter here yesterday! Very dangerous.",
+          "timestamp": "2026-06-25T09:15:00Z"
+        },
+        {
+          "id": "c2",
+          "user": "Municipal Corporation Support",
+          "text": "Issue registered. Assigned Ticket ID #MC-INF-482.",
+          "timestamp": "2026-06-26T11:00:00Z",
+          "isSystem": true
+        }
+      ],
+      "mediaUrl": "https://images.unsplash.com/photo-1515162305285-0293e4767cc2?auto=format&fit=crop&w=800&q=80",
+      "mediaType": "image",
+      "escalationInfo": {
+        "agency": "Public Works Department (PWD)",
+        "escalatedAt": "2026-06-26T11:00:00Z",
+        "ticketId": "CH-INF-001"
+      }
+    },
+    {
+      "id": "issue-2",
+      "title": "Sewage overflow and flooding on main road",
+      "description": "The main sewer line has ruptured, leading to highly unsanitary conditions. Dirty water has filled the entire lane, making it impossible for pedestrians to walk and posing a severe health hazard.",
+      "category": "Sanitation",
+      "severity": "Critical",
+      "status": "resolved",
+      "location": {
+        "lat": 28.615,
+        "lng": 77.22,
+        "address": "Lane 3, near Mandi House Metro Gate 2, New Delhi"
+      },
+      "reportedBy": "Priya Das",
+      "reportedAt": "2026-06-27T07:15:00Z",
+      "upvotes": 32,
+      "verifications": 28,
+      "verifiedBy": [
+        "user-1",
+        "user-3",
+        "user-5"
+      ],
+      "comments": [
+        {
+          "id": "c3",
+          "user": "Rohan Gupta",
+          "text": "The smell is unbearable. Shops around this street have closed.",
+          "timestamp": "2026-06-27T08:00:00Z"
+        },
+        {
+          "id": "c4",
+          "user": "Delhi Jal Board Support",
+          "text": "Maintenance crew dispatched. Pump operations underway.",
+          "timestamp": "2026-06-27T14:30:00Z",
+          "isSystem": true
+        },
+        {
+          "id": "c-sys-1782631221486",
+          "user": "Community Hero Support",
+          "text": "Issue has been officially marked as RESOLVED. Thank you to the authorities and citizens!",
+          "timestamp": "2026-06-28T07:20:21.486Z",
+          "isSystem": true
+        }
+      ],
+      "mediaUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+      "mediaType": "image",
+      "escalationInfo": {
+        "agency": "Delhi Jal Board (DJB)",
+        "escalatedAt": "2026-06-27T10:00:00Z",
+        "ticketId": "CH-SAN-002"
+      }
+    },
+    {
+      "id": "issue-3",
+      "title": "Broken streetlights making lane unsafe at night",
+      "description": "Over 5 streetlights in a row are completely dead. The lane is pitch black after 7 PM, creating safety concerns for women and elderly residents walking back from the market.",
+      "category": "Safety",
+      "severity": "Medium",
+      "status": "verified",
+      "location": {
+        "lat": 28.565,
+        "lng": 77.175,
+        "address": "Sector 4 Outer Lane, RK Puram, New Delhi"
+      },
+      "reportedBy": "Vikram Malhotra",
+      "reportedAt": "2026-06-26T18:40:00Z",
+      "upvotes": 9,
+      "verifications": 7,
+      "verifiedBy": [
+        "user-2",
+        "user-6"
+      ],
+      "comments": [
+        {
+          "id": "c5",
+          "user": "Kiran Goel",
+          "text": "We need this fixed immediately. Dark spots have led to chain-snatching incidents nearby in the past.",
+          "timestamp": "2026-06-26T20:10:00Z"
+        }
+      ],
+      "mediaUrl": "https://images.unsplash.com/photo-1509023464722-18d996393ca8?auto=format&fit=crop&w=800&q=80",
+      "mediaType": "image",
+      "escalationInfo": null
+    }
+  ]
+}

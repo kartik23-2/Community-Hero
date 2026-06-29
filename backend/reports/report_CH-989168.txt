@@ -1,0 +1,24 @@
+
+=========================================
+OFFICIAL MUNICIPAL TICKET: CH-989168
+Generated on: 2026-06-28T07:04:34.587Z
+=========================================
+ISSUE CATEGORY: Sanitation
+SEVERITY LEVEL: Low
+ISSUE HEADLINE: Broken water mains near gate 3
+
+DESCRIPTION:
+Water is overflowing from the main street pipe near RK Puram Gate 3. Pedestrians cannot cross.
+
+LOCATION DATA:
+Address: Safdarjung Lane 2, Sector 3, New Delhi - Lat: 28.5901, Lng: 77.2100
+Latitude: 28.590068999716188
+Longitude: 77.21002578735353
+
+CITIZEN CONTACT:
+Reporter Name: Jane Citizen
+Verifying Citizens: ravi@citizen.org, amit@citizen.org, jane@citizen.org
+
+STATUS REPORT:
+Escalated via Community Hero Platform.
+=========================================
